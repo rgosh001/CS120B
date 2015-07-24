@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "rgosh001_lab6_part2_ex2", "rgosh001_lab6_part2_ex2\rgosh001_lab6_part2_ex2.cproj", "{0A815631-F8C0-4681-B68D-EED707320479}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A815631-F8C0-4681-B68D-EED707320479}.Debug|AVR.ActiveCfg = Debug|AVR
+		{0A815631-F8C0-4681-B68D-EED707320479}.Debug|AVR.Build.0 = Debug|AVR
+		{0A815631-F8C0-4681-B68D-EED707320479}.Release|AVR.ActiveCfg = Release|AVR
+		{0A815631-F8C0-4681-B68D-EED707320479}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

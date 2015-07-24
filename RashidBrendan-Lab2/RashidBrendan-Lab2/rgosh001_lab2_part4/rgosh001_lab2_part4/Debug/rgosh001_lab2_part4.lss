@@ -1,0 +1,302 @@
+
+rgosh001_lab2_part4.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  000000f0  00000164  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000f0  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000164  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 00000030  00000000  00000000  00000194  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   000002df  00000000  00000000  000001c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 000000ea  00000000  00000000  000004a3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   0000013e  00000000  00000000  0000058d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000044  00000000  00000000  000006cc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    000001e5  00000000  00000000  00000710  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    00000242  00000000  00000000  000008f5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000020  00000000  00000000  00000b37  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e4       	ldi	r29, 0x40	; 64
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	02 d0       	rcall	.+4      	; 0x9e <main>
+  9a:	28 c0       	rjmp	.+80     	; 0xec <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <main>:
+}
+
+
+int main(void)
+{
+	DDRA = 0x00;
+  9e:	11 b8       	out	0x01, r1	; 1
+	DDRB = 0xFF;
+  a0:	8f ef       	ldi	r24, 0xFF	; 255
+  a2:	84 b9       	out	0x04, r24	; 4
+	DDRC = 0xFF;
+  a4:	87 b9       	out	0x07, r24	; 7
+		unsigned char tempC = 0x00;
+		
+		
+		if(GetBit(tempA, 0))
+		{
+			tempC = SetBit(tempC,4,1);
+  a6:	50 e1       	ldi	r21, 0x10	; 16
+		unsigned char count = 0x00;
+		unsigned char count2 = 0x00;
+		unsigned char temp = 0x00;
+		unsigned char tempA = PINA;
+		unsigned char tempB = 0x00;
+		unsigned char tempC = 0x00;
+  a8:	40 e0       	ldi	r20, 0x00	; 0
+	while (1)
+	{
+		unsigned char count = 0x00;
+		unsigned char count2 = 0x00;
+		unsigned char temp = 0x00;
+		unsigned char tempA = PINA;
+  aa:	20 b1       	in	r18, 0x00	; 0
+	return (b ? x | (0x01 << k) : x & ~(0x01 << k));
+}
+
+unsigned char GetBit(unsigned char x, unsigned char k)
+{
+	return ((x & (0x01 << k)) != 0);
+  ac:	82 2f       	mov	r24, r18
+  ae:	90 e0       	ldi	r25, 0x00	; 0
+		unsigned char tempA = PINA;
+		unsigned char tempB = 0x00;
+		unsigned char tempC = 0x00;
+		
+		
+		if(GetBit(tempA, 0))
+  b0:	20 fd       	sbrc	r18, 0
+  b2:	02 c0       	rjmp	.+4      	; 0xb8 <main+0x1a>
+		unsigned char count = 0x00;
+		unsigned char count2 = 0x00;
+		unsigned char temp = 0x00;
+		unsigned char tempA = PINA;
+		unsigned char tempB = 0x00;
+		unsigned char tempC = 0x00;
+  b4:	34 2f       	mov	r19, r20
+  b6:	01 c0       	rjmp	.+2      	; 0xba <main+0x1c>
+		
+		
+		if(GetBit(tempA, 0))
+		{
+			tempC = SetBit(tempC,4,1);
+  b8:	35 2f       	mov	r19, r21
+		}
+		if(GetBit(tempA, 1))
+  ba:	21 fd       	sbrc	r18, 1
+
+#include <avr/io.h>
+
+unsigned char SetBit(unsigned char x, unsigned char k, unsigned char b)
+{
+	return (b ? x | (0x01 << k) : x & ~(0x01 << k));
+  bc:	30 62       	ori	r19, 0x20	; 32
+		}
+		if(GetBit(tempA, 1))
+		{
+			tempC = SetBit(tempC,5,1);
+		}
+		if(GetBit(tempA, 2))
+  be:	22 fd       	sbrc	r18, 2
+
+#include <avr/io.h>
+
+unsigned char SetBit(unsigned char x, unsigned char k, unsigned char b)
+{
+	return (b ? x | (0x01 << k) : x & ~(0x01 << k));
+  c0:	30 64       	ori	r19, 0x40	; 64
+		}
+		if(GetBit(tempA, 2))
+		{
+			tempC = SetBit(tempC,6,1);
+		}
+		if(GetBit(tempA, 3))
+  c2:	23 fd       	sbrc	r18, 3
+
+#include <avr/io.h>
+
+unsigned char SetBit(unsigned char x, unsigned char k, unsigned char b)
+{
+	return (b ? x | (0x01 << k) : x & ~(0x01 << k));
+  c4:	30 68       	ori	r19, 0x80	; 128
+		if(GetBit(tempA, 3))
+		{
+			tempC = SetBit(tempC,7,1);
+		}
+		
+		PORTC = tempC;
+  c6:	38 b9       	out	0x08, r19	; 8
+	return (b ? x | (0x01 << k) : x & ~(0x01 << k));
+}
+
+unsigned char GetBit(unsigned char x, unsigned char k)
+{
+	return ((x & (0x01 << k)) != 0);
+  c8:	95 95       	asr	r25
+  ca:	87 95       	ror	r24
+  cc:	95 95       	asr	r25
+  ce:	87 95       	ror	r24
+  d0:	95 95       	asr	r25
+  d2:	87 95       	ror	r24
+  d4:	95 95       	asr	r25
+  d6:	87 95       	ror	r24
+		}
+		
+		PORTC = tempC;
+		
+		
+		if(GetBit(tempA, 4))
+  d8:	81 70       	andi	r24, 0x01	; 1
+		{
+			tempB = SetBit(tempB,0,1);
+		}
+		if(GetBit(tempA, 5))
+  da:	25 fd       	sbrc	r18, 5
+
+#include <avr/io.h>
+
+unsigned char SetBit(unsigned char x, unsigned char k, unsigned char b)
+{
+	return (b ? x | (0x01 << k) : x & ~(0x01 << k));
+  dc:	82 60       	ori	r24, 0x02	; 2
+		}
+		if(GetBit(tempA, 5))
+		{
+			tempB = SetBit(tempB,1,1);
+		}
+		if(GetBit(tempA, 6))
+  de:	26 fd       	sbrc	r18, 6
+
+#include <avr/io.h>
+
+unsigned char SetBit(unsigned char x, unsigned char k, unsigned char b)
+{
+	return (b ? x | (0x01 << k) : x & ~(0x01 << k));
+  e0:	84 60       	ori	r24, 0x04	; 4
+		}
+		if(GetBit(tempA, 6))
+		{
+			tempB = SetBit(tempB,2,1);
+		}
+		if(GetBit(tempA, 7))
+  e2:	22 23       	and	r18, r18
+  e4:	0c f4       	brge	.+2      	; 0xe8 <main+0x4a>
+
+#include <avr/io.h>
+
+unsigned char SetBit(unsigned char x, unsigned char k, unsigned char b)
+{
+	return (b ? x | (0x01 << k) : x & ~(0x01 << k));
+  e6:	88 60       	ori	r24, 0x08	; 8
+		if(GetBit(tempA, 7))
+		{
+			tempB = SetBit(tempB,3,1);
+		}
+		
+		PORTB = tempB;
+  e8:	85 b9       	out	0x05, r24	; 5
+		
+	}
+  ea:	df cf       	rjmp	.-66     	; 0xaa <main+0xc>
+
+000000ec <_exit>:
+  ec:	f8 94       	cli
+
+000000ee <__stop_program>:
+  ee:	ff cf       	rjmp	.-2      	; 0xee <__stop_program>
